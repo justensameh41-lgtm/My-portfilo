@@ -1,0 +1,324 @@
+
+
+
+.contanir{
+    width: 1440px;
+    margin: auto;
+}
+
+/*Start frist-face*/
+.frist-face{
+    background-image: url(bg-header-desktop.png);
+    background-size: cover;
+}
+
+.frist-face .logo{
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 100px;
+}
+
+.frist-face .text{
+    text-align: center;
+}
+
+.frist-face .text h1{
+    font-family: Bai Jamjure;
+    text-align: center;
+    Font-size: 35px;
+}
+
+.frist-face .text p{
+    color: #b5bdc0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.frist-face .button{
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.frist-face .button .ios{
+    background-color: #5dccbb;
+    color: #fff;
+    height: 40px;
+    width: 170px;
+    border-radius: 20px;
+    border: 1px solid #5eb5a2;
+    box-shadow: 2px 2px 20px #5dccbb;
+}
+
+.frist-face .button .mac{
+    background-color: #8896ff;
+    color: #fff;
+    height: 40px;
+    width: 170px;
+    border-radius: 20px;
+    border: 1px solid #8288d6;
+    box-shadow: 2px 2px 20px #8288d6;
+}
+
+/*End frist-face*/
+
+/*Start track*/
+
+.track h2{
+    text-align: center;
+    Font-size: 30px;
+}
+
+.track p{
+    color: #b5bdc0;
+    line-height: 25px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+/*End track*/
+
+/*Start computer*/
+
+.computer{
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
+.computer .image{
+    float: left;
+    overflow: hidden;
+}
+
+.computer .image img{
+    margin-left: -30px;
+}
+
+.computer .text{
+    float: left;
+    padding-left: 80px;
+    padding-top: 50px;
+    overflow: hidden;
+    width: 300px;
+    margin-bottom: 150px;
+}
+
+.computer .text div{
+    padding-bottom: 10px;
+}
+
+.computer .text h5{
+    font-size: 18px;
+}
+
+.computer .text p{
+    color: #a6a7a9;
+    line-height: 1.4;
+}
+
+/*End computer*/
+
+/*Start Clipboard*/
+
+.clipboard h3{
+    text-align: center;
+    Font-size: 35px;
+}
+
+.clipboard p{
+    color: #a6a7a9;
+    width: 550px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.4;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+/*End Clipboard*/
+
+/*Start device-img*/
+
+.device-img{
+    text-align: center;
+}
+
+.device-img .img img{  
+    padding-bottom: 0px;
+}
+
+/*End device-img*/
+
+/*Start Workflow*/
+
+.workflow{
+    text-align: center;
+}
+
+.workflow h3{
+    padding-top: 0px;
+    Font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.workflow p{
+    color: #a6a7a9;
+    line-height: 1.4;
+    padding-bottom: 30px;
+}
+
+/*End Workflow*/
+
+/*Start Sympols*/
+
+.sympols{
+    text-align: center;
+    overflow: hidden;
+}
+
+.sympols  div{
+    width: 285px;
+    display: inline-block;
+    height: 100%;
+}
+
+.sympols h6{
+    Font-size: 20px;
+}
+
+.sympols p{
+    color: #a6a7a9;
+    padding-bottom: 100px;
+    line-height: 1.4;
+}
+
+/*End Sympols*/
+
+/*Start logos*/
+
+.logos{
+    text-align: center;
+}
+
+.logos img{
+    margin: 0px 40px;
+    padding-bottom: 100px;
+}
+
+/*End logos*/
+
+/*Start download clipboard*/
+
+.download-clipboard{
+    text-align: center;
+}
+
+.download-clipboard h3{
+    Font-size: 30px;
+}
+
+.download-clipboard p{
+    line-height: 1.4;
+    color: #a6a7a9;
+    width: 575px;
+    margin: auto;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.download-clipboard .buttons{
+    padding-bottom: 100px;
+}
+
+.download-clipboard .buttons button:first-of-type{
+    border: 1px solid  #5eb5a2;
+    background-color: #5dccbb;
+    box-shadow: 2px 2px 20px #5dccbb;
+}
+
+.download-clipboard .buttons button:last-of-type{
+    border: 1px solid #8288d6;
+    background-color: #8896ff;
+    margin-left: 20px;
+    box-shadow: 2px 2px 20px #8896ff;
+}
+
+/*End download clipboard*/
+
+/*Start Footer*/
+
+.footer{
+    display: grid;
+    grid-template-columns: 280px 280px 190px 200px 600px;
+    background-color: #f5f6f8;
+}
+
+.footer .logo-c{
+    
+}
+
+.footer .logo-c img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    float: right;
+    margin-right: 0px;
+    
+
+}
+
+.footer .ul1{
+    
+}
+
+.footer .ul1 ul{
+    list-style: none;
+    float: right;
+    
+}
+
+.footer .ul1 ul li{
+
+}
+
+.footer .ul2{
+
+}
+
+.footer .ul2 ul{
+    list-style: none;
+    float: right;
+}
+
+.footer .ul2 ul li{
+
+}
+
+.footer .ul3{
+
+}
+
+.footer .ul3 ul{
+    list-style: none;
+}
+
+.footer .logos-comminecation{
+    float: left;
+    text-align: center;
+}
+
+.footer .logos-comminecation img{
+    text-align: center;
+}
+/*End Footer*/
+
+/*Start My Framwork*/
+
+.my-button{
+    color: #fff;
+    height: 40px;
+    width: 170px;
+    border-radius: 20px;
+}
+
+/*End My Framwork*/
