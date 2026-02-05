@@ -1,0 +1,21 @@
+
+body{
+    background-color: black;
+}
+
+:root{
+    --green-color: #00FF00;
+}
+
+.card{
+    background-color: black;
+    border: solid 3px white;
+}
+
+.card h3{
+    color: var(--green-color);
+}
+
+.card p{
+    color: ghostwhite;
+}
