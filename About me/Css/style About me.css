@@ -1,0 +1,11 @@
+.image{
+    float: left;
+}
+
+.text{
+    float: right;
+}
+
+.card{
+    max-width: 1000px;
+}
