@@ -95,13 +95,18 @@ body{
 /* Start my work */
 
 .carousel{
-    width: 100%;
+    text-align: center;
 }
 
 .carousel .carousel-item a img{
     width: 500px;
     height: 500px;
-    justify-content: center;
+    text-align: center;
+}
+
+.carousel1 h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
 }
 
 .icon svg{
@@ -109,10 +114,6 @@ body{
     font-size: 50px;
     margin-top: 50%;
     position: relative;
-}
-
-.text-my-work{
-    width: 100%;
 }
 
 /* End my work */
