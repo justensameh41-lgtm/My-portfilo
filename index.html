@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="Css filles/bootstrap.min.css">
         <link rel="stylesheet" href="Css filles/all.min.css">
-        <link rel="stylesheet" href="Css filles/style.css">
+        <link id="theme-style" rel="stylesheet" href="Css filles/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap">
@@ -44,12 +44,11 @@
                                 <li class="nav-item">
                                     <div class="download-cv text-center">
                                         <div class="container">
-                                            <a href="pdf cv/my cv.pdf" download="Justin_CV">
+                                            <a href="pdf cv/my cv.pdf" download="Justin_CV" target="_blank">
                                                 <button class="rounded-pill mt-5 mb-5">download my pdf cv</button>
                                             </a>
                                         </div>
                                     </div>
-
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -58,15 +57,27 @@
                                     <ul class="dropdown-menu">
                                         <li>
                                             <i class="fa-brands fa-github"></i>
-                                            <a class="dropdown-item" href="https://github.com/justensameh41-lgtm">Git hup</a>
+                                            <a class="dropdown-item" href="https://github.com/justensameh41-lgtm">Github</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        themes
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item" onclick="saveTheme('themes/Dark theme/Dark-theme.css')">Dark theme</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" onclick="saveTheme('themes/Light theme/Light-theme.css')">Light theme</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" onclick="saveTheme('themes/Auto/Auto.css')">Auto</a>
                                         </li>
                                     </ul>
                                 </li>
                             </ul>
-                            <form class="d-flex mt-3" role="search">
-                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-                                <button class="btn btn-outline-success" type="submit">Search</button>
-                            </form>
                         </div>
                     </div>
                 </div>
@@ -110,19 +121,13 @@
                             <div class="carousel1 carousel-inner mb-5">
                                 <h2 class="pb-5">This is a brief overview of the projects I have already implemented.</h2>
                                 <div class="carousel-item active" data-bs-interval="10000">
-                                    <a href="my works/work-1/index.html" target="_blank">
-                                        <img src="images/My works/work-1.gif" alt="...">
-                                    </a>
+                                    <img src="images/My works/work-1.gif" alt="...">
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <a href="my works/work-2/LV1.html" target="_blank">
-                                        <img src="images/My works/work-2.gif" alt="...">
-                                    </a>
+                                    <img src="images/My works/work-2.gif" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <a href="my works/work-3/html file.html" target="_blank">
-                                        <img src="images/My works/work-3.gif" alt="...">
-                                    </a>
+                                    <img src="images/My works/work-3.gif" alt="...">
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -133,6 +138,9 @@
                                 <span class="icon" aria-hidden="true"><i class="fa-solid fa-angle-right"></i></span>
                                 <span class="visually-hidden">Next</span>
                             </button>
+                            <a href="Portfolio Gallery/Gallery.html" target="_blank">
+                                <button class="btn btn-success mb-5">Learn more</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -146,22 +154,40 @@
                 <div class="my-tools text-center">
                     <h2 class="text-light pt-5 pb-5 h1">I used:</h2>
                     <div class="row">
-                        <div class="bootstrab col-md-4 mt-5 mb-5">
+                        <div class="bootstrab col-md-3 mt-5 mb-5">
                             <img src="images/my-tools/bootstrab.jpg" alt="bootstrab">
                         </div>
-                        <div class="wow col-md-4 mt-5 mb-5">
+                        <div class="wow col-md-3 mt-5 mb-5">
                             <img src="images/my-tools/wow.png" alt="wow.js">
                         </div>
-                        <div class="font awesome col-md-4 mt-5 mb-5">
+                        <div class="font awesome col-md-3 mt-5 mb-5">
                             <img src="images/my-tools/font-awesome.png" alt="font awesome">
+                        </div>
+                        <div class="github col-md-3 mt-5 mb-5">
+                            <img src="images/my-tools/Github.jpg" alt="Github">
                         </div>
                     </div>
                 </div>
             </div>
 
-        <!--dwonload pdf cv-->
+        
             
+        <script>
+            function saveTheme(path) {
+            // 1. يغير الملف فوراً
+            document.getElementById('theme-style').href = path;
+            // 2. يحفظه في ذاكرة المتصفح
+            localStorage.setItem('selected-theme', path);
+            }
 
+            // عند عمل Refresh (إعادة تحميل)
+            window.onload = function() {
+                const savedPath = localStorage.getItem('selected-theme');
+                if (savedPath) {
+                    document.getElementById('theme-style').href = savedPath;
+                }
+            };
+        </script>
         <script src="Js filles/bootstrap.bundle.min.js"></script>
         <script src="Js filles/all.min.js"></script>
         <script src="Js filles/test.js"></script>
