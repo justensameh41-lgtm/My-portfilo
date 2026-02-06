@@ -15,7 +15,3 @@ body{
 .card h3{
     color: var(--green-color);
 }
-
-.card p{
-    color: ghostwhite;
-}
