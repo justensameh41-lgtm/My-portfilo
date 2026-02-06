@@ -14,8 +14,8 @@
     </head>
     <body>
         <!-- Start navbar -->
-            <div class="container">
-                <div class="navbar">
+            <nav class="navbar navbar bg-dark fixed-top">
+                <div class="container">
                     <h4>My Portifoli</h4>
                     <ul class="list-unstyled">
                         <li>
@@ -31,8 +31,47 @@
                             <a class="link-offset-2 link-underline link-underline-opacity-0" id="Home" href="#">My projects</a>
                         </li>
                     </ul>
+                    <button class="navbar-toggler mt-3 mb-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Tools</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <div class="download-cv text-center">
+                                        <div class="container">
+                                            <a href="pdf cv/my cv.pdf" download="Justin_CV">
+                                                <button class="rounded-pill mt-5 mb-5">download my pdf cv</button>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        My accounts
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <i class="fa-brands fa-github"></i>
+                                            <a class="dropdown-item" href="https://github.com/justensameh41-lgtm">Git hup</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </nav>
+
 
         <!-- End navbar -->
 
@@ -50,9 +89,9 @@
         <!-- Start image -->
 
             <div class="container">
-                <div class="text col-md-8 text-center">
-                    <h2 class="h1">I am a <span>Fullstuk programmer</span></h2>
-                    <p class="text-light pt-1 h5 lh-lg">i can make <a class="link-offset-2 link-underline link-underline-opacity-0" href="#">creative work</a><br>i have many certificates from international companies<br>i am a engineer responsible for building everything<br>the user sees and interacts with<br>i can performance optimization<br>i can cross-Browser compatibility<br>i can test & Debugg the code<br></p>
+                <div class="text col-md-8">
+                    <h2 class="h1 text-center">I am a <span>Fullstuk programmer</span></h2>
+                    <p class="text-light pt-1 h5 lh-lg text-center">i can make <a class="link-offset-2 link-underline link-underline-opacity-0" href="#">creative work</a><br>i have many certificates from international companies<br>i am a engineer responsible for building everything<br>the user sees and interacts with<br>i can performance optimization<br>i can cross-Browser compatibility<br>i can test & Debugg the code<br></p>
                 </div>
                 <div class="image col-md-4">
                     <img src="images/my image.jpg" alt="...">
@@ -68,7 +107,7 @@
                 <div class="row">
                     <div class="col-md-6 col-xm-12"></div>
                         <div id="carouselExampleInterval" class="carousel carousel slide" data-bs-ride="carousel">
-                            <div class="carousel1 carousel-inner">
+                            <div class="carousel1 carousel-inner mb-5">
                                 <h2 class="pb-5">This is a brief overview of the projects I have already implemented.</h2>
                                 <div class="carousel-item active" data-bs-interval="10000">
                                     <a href="my works/work-1/index.html" target="_blank">
@@ -96,12 +135,32 @@
                             </button>
                         </div>
                     </div>
-                            
                 </div>
             </div>
             
 
         <!-- End my work -->
+
+        <!--Skills & Tools-->
+            <div class="container">
+                <div class="my-tools text-center">
+                    <h2 class="text-light pt-5 pb-5 h1">I used:</h2>
+                    <div class="row">
+                        <div class="bootstrab col-md-4 mt-5 mb-5">
+                            <img src="images/my-tools/bootstrab.jpg" alt="bootstrab">
+                        </div>
+                        <div class="wow col-md-4 mt-5 mb-5">
+                            <img src="images/my-tools/wow.png" alt="wow.js">
+                        </div>
+                        <div class="font awesome col-md-4 mt-5 mb-5">
+                            <img src="images/my-tools/font-awesome.png" alt="font awesome">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!--dwonload pdf cv-->
+            
 
         <script src="Js filles/bootstrap.bundle.min.js"></script>
         <script src="Js filles/all.min.js"></script>
