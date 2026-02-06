@@ -1,11 +1,16 @@
-.image{
-    float: left;
+body{
+    background-color: black;
 }
 
-.text{
-    float: right;
+:root{
+    --green-color: #00FF00;
 }
 
 .card{
-    max-width: 1000px;
+    background-color: black;
+    border: solid 3px white;
+}
+
+.card h3{
+    color: var(--green-color);
 }
